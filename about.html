@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name ="viewport" content ="width=device-width, 
+        initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Impressionism of Claude Monet - Main Page</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" media="print" href="print.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5206cfd46e.js" crossorigin="anonymous"></script>
+        <!--
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+        -->
+        
+
+    </head>
+    <body>
+        <section class="aboutme">
+            <nav>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <!--<i class="fa fa-times" onclick="hideMenu()"></i>-->
+                    <ul>
+                        <li><a href="index.html">MAIN PAGE</a></li>
+                        <li><a href="claude.html">CLAUDE MONET</a></li>
+                        <li><a href="pieces.html">FAMOUS PIECES</a></li>
+                        <li><a href=""><strong><u>ABOUT ME</u></strong></a></li>
+                        <li><a href="feedback.html">FEED BACK</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+                <!--<i class="fa fa-bars" onclick="showMenu()"></i>-->
+            </nav>
+            <h1>About Me</h1>
+            <br>
+            <p>Good Day!<br>My name is Thanaporn Waiprib(Omzin). 
+                <br>I am just an admirer of Claude Monet.<br>Email: aomsin6419@gmail.com
+            </p>
+            <div class="icons">
+                <a href="https://www.facebook.com/aomsin.nalak.75">
+                    <i class="fa-brands fa-facebook-square fa-3x"></i>
+                </a>
+                <a href="https://www.instagram.com/nuethangg/">
+                    <i class="fa-brands fa-instagram fa-3x"></i>
+                </a>
+            </div>
+           
+        </section>
+        <br>
+            <br>
+            <br>
+            <div class="foot">
+            <p>
+                Copyright &copy; 2022 <br>
+                Designed by T.W.</p>
+            </div>
+        <!--JavaScript for Toggle Menu-->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+
+    </body>
+</html>

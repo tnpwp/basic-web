@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name ="viewport" content ="width=device-width, 
+        initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Impressionism of Claude Monet - Main Page</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" media="print" href="print.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5206cfd46e.js" crossorigin="anonymous"></script>    </head>
+    <body>
+        <section class="works">
+            <nav>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">MAIN PAGE</a></li>
+                        <li><a href="claude.html">CLAUDE MONET</a></li>
+                        <li><a href=""><strong><u>FAMOUS PIECES</u></strong></a></li>
+                        <li><a href="about.html">ABOUT ME</a></li>
+                        <li><a href="feedback.html">FEED BACK</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <!-- Image container of the image slider -->
+            <div class="image-container">
+                <h1>Famous Pieces of Claude Monet</h1>
+                <br>
+                <div class="slide">
+                    <a href="https://www.claude-monet.com/impression-sunrise.jsp">
+                        <img src="images/p1.jpg" alt="Impression, Sunrise, art piece by Claede Monet">
+                    </a>
+                    <p><strong> Impression, Sunrise</strong> from 1872, was created from a scene in the port of Le Havre.
+                        Monet depicts a mist, which provides a hazy background to the piece set in the French harbor. The orange and
+                        yellow hues contrast brilliantly with the dark vessels, where little, if any detail is immediately visible to the audience. It
+                        is a striking and candid work that shows the smaller boats in the foreground almost being propelled along by the
+                        movement of the water. This has, once again, been achieved by separate brushstrokes that also show various colors
+                        "sparkling" on the sea.
+                    </p>
+                </div>
+                <div class="slide">
+                    <a href="https://www.claude-monet.com/woman-with-a-parasol.jsp">
+                        <img src="images/p2.jpg" alt="Woman with a parasol, art piece by Claede Monet">
+                    </a>
+                    <p><strong> Woman with a parasol</strong> was painted outdoors, probably in a single session of several
+                        hours' duration. The artist intended the work to convey the feeling of a casual family outing rather than a formal
+                        portrait, and used pose and placement to suggest that his wife and son interrupted their stroll while he captured their
+                        likenesses.
+                    </p>
+                </div>
+                <div class="slide">
+                    <a href="https://www.claude-monet.com/the-water-lily-pond.jsp">
+                        <img src="images/p3.jpg" alt="The Water Lily Pond, art piece by Claede Monet">
+                    </a>
+                    <p>><strong> The Water Lily Pond</strong>, from 1899, is exquisite in its composition of
+                        background trees, weeping willow, and the bridge, which underwent many alterations up to 1910. The pond here is
+                        literally obliterated by vegetation and lilies. It is composed of short brushstrokes - a familiar method during his mature
+                        years. In a letter, Monet described how he had planted the water lilies for fun - he had never intended painting them,
+                        however, once they established themselves they almost became his only source of inspiration. He wrote: "I saw, all of
+                        a sudden, that my pond had become enchanted... Since then, I have had no other model."
+                    </p>
+                </div>
+                <div class="slide">
+                    <a href="https://www.claude-monet.com/rouen-cathedral.jsp">
+                        <img src="images/piece4.jpg" alt="Rouen Cathedral, Full Sunlight, art piece by Claede Monet">
+                    </a>
+                    <p><strong> Rouen Cathedral, Full Sunlight</strong> - is an atmospheric piece, which
+                        was probably worked on alongside other canvases of different views of the historic building at the same time. The
+                        series of paintings provides an inspiring collection of works of the cathedral at different times of the day and also
+                        provides a record of the artist's experiences with light and atmosphere - a fascinating insight into what Monet was
+                        actually experiencing.
+                        Rouen Cathedral This one - Rouen Cathedral, Full Sunlight - is an atmospheric piece, which
+                        was probably worked on alongside other canvases of different views of the historic building at the same time. The
+                        series of paintings provides an inspiring collection of works of the cathedral at different times of the day and also
+                        provides a record of the artist's experiences with light and atmosphere - a fascinating insight into what Monet was
+                        actually experiencing.                  
+                    </p>
+                </div>
+                
+                <!-- Next and Previous icon to change images -->
+                <a class="previous" onclick="moveSlides(-1)">
+                    <i class="fa fa-chevron-circle-left"></i>
+                </a>
+                <a class="next" onclick="moveSlides(1)">
+                    <i class="fa fa-chevron-circle-right"></i>
+                </a>
+            </div>
+            <br>
+        
+            <div style="text-align:center">
+                <span class="footerdot"
+                    onclick="activeSlide(1)">
+                </span>
+                <span class="footerdot"
+                    onclick="activeSlide(2)">
+                </span>
+                <span class="footerdot"
+                    onclick="activeSlide(3)">
+                </span>
+                <span class="footerdot"
+                    onclick="activeSlide(4)">
+                </span>
+            </div>
+        </section>
+        <br>
+            <br>
+            <br>
+            <div class="foot">
+            <p>
+                Copyright &copy; 2022 <br>
+                Designed by T.W.</p>
+            </div>
+
+        <!--JavaScript for Toggle Menu-->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+        <!--JavaScript for Slider-->
+        <script>
+            var slideIndex = 1;
+            displaySlide(slideIndex);
+        
+            function moveSlides(n) {
+                displaySlide(slideIndex += n);
+            }
+        
+            function activeSlide(n) {
+                displaySlide(slideIndex = n);
+            }
+        
+            /* Main function */
+            function displaySlide(n) {
+                var i;
+                var totalslides =
+                    document.getElementsByClassName("slide");
+                var totaldots =
+                    document.getElementsByClassName("footerdot");
+                
+                if (n > totalslides.length) {
+                    slideIndex = 1;
+                }
+                
+                if (n < 1) {
+                    slideIndex = totalslides.length;
+                }
+                for (i = 0; i < totalslides.length; i++) {
+                    totalslides[i].style.display = "none";
+                }
+                for (i = 0; i < totaldots.length; i++) {
+                    totaldots[i].className =
+                    totaldots[i].className.replace(" active", "");
+                }
+                totalslides[slideIndex - 1].style.display = "block";
+                totaldots[slideIndex - 1].className += " active";
+            }
+        </script>
+
+    </body>
+</html>

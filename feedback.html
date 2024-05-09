@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name ="viewport" content ="width=device-width, 
+        initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Impressionism of Claude Monet - Main Page</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" media="print" href="print.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5206cfd46e.js" crossorigin="anonymous"></script>     
+
+    </head>
+    <body>
+        <section class="feedback">
+            <nav>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">MAIN PAGE</a></li>
+                        <li><a href="claude.html">CLAUDE MONET</a></li>
+                        <li><a href="pieces.html">FAMOUS PIECES</a></li>
+                        <li><a href="about.html">ABOUT ME</a></li>
+                        <li><a href=""><strong><u>FEED BACK</u></strong></a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Feed Back</h1>
+            <br>
+            <form action="mailto:aomsin6419@gmail.com" method="post" enctype="text/plain"> 
+                <fieldset> 
+                    <label for="idname">
+                        <strong>Your name</strong>
+                    </label>
+                    <br> 
+                    <input type="text" name="Name" id="idname" size="30" maxlength="75" required><br> 
+                        <label for="idemail"><strong>Your email address</strong></label><br> 
+                    <input type="text" name="Email address" id="idemail" size="30" maxlength="75" required><br> 
+                        <label for="idsubject"><strong>Email subject</strong></label><br> 
+                    <input type="text" name="Subject" id="idsubject" size="30" maxlength="75" required><br> 
+                        <label for="idmessage"><strong>Your message</strong></label><br> 
+                    <textarea name="Message" id="idmessage" rows="10" cols="30" placeholder="Place your message">
+                    </textarea><br> 
+                    <br> 
+                    <input type="radio" name="Subscription" id="r1" value="Subscription"> 
+                        <label for="r1">
+                            I would like to subscribe to newsletter</label><br> 
+                    <input type="radio" name="Subscription" id="r2" value="No emails"> 
+                        <label for="r2">
+                            No, please do not send to my email</label><br> 
+                    <br> 
+                    <input type="checkbox" name="Get response" id="idgetResponse" value="yes" required>
+                        <label for="idgetResponse">I consent to let this cinformation be used for improvement</label><br>     
+                    <br> 
+                    <input type="submit" value="Submit"> 
+                    <input type="reset" value="Reset"> 
+                </fieldset> 
+            </form> 
+            
+        </section>
+        <br>
+            <br>
+            <br>
+            <div class="foot">
+            <p>
+                Copyright &copy; 2022 <br>
+                Designed by T.W.</p>
+            </div>
+
+
+
+
+        <!--JavaScript for Toggle Menu-->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name ="viewport" content ="width=device-width, 
+        initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Impressionism of Claude Monet - Main Page</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" media="print" href="print.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5206cfd46e.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class="claude">
+            <nav>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">MAIN PAGE</a></li>
+                        <li><a href=""><strong><u>CLAUDE MONET</u></strong></a></li>
+                        <li><a href="pieces.html">FAMOUS PIECES</a></li>
+                        <li><a href="about.html">ABOUT ME</a></li>
+                        <li><a href="feedback.html">FEED BACK</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <article>
+                <h1>Claude Monet History</h1>
+                <br>
+                <div class="autograpg">
+                    <figure>
+                        <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Claude_Monet_1899_Nadar.jpg/800px-Claude_Monet_1899_Nadar.jpg"
+                                target="_blank">
+                            <img src="images/claudepic.png" alt="Photograph of Claude Monet" width="170">
+                        </a>
+                        <figcaption>Portrait photograph of the French impressionist painter Claude Monet by Nadar, 1899</figcaption>
+                    </figure>
+                </div>
+                <br>
+                <p>Raised in Normandy, Claede Monet was introduced to plein-air
+                    painting by Eugène Boudin, known for paintings of the resorts
+                    that dotted the region&apos;s Channel coast, and subsequently
+                    studied informally with the Dutch landscapist Johan Jongkind
+                    (1819&lowbar;1891). When he was twenty-two, Monet joined the
+                    Paris studio of the academic history painter Charles Gleyre.
+                    His classmates included Auguste Renoir, Frédéric Bazille,
+                    and other future Impressionists. Many rejections from
+                    exhibitions inspired Monet to join with Edgar Degas, Édouard
+                    Manet, Camille Pissarro, Renoir, and others in establishing an
+                    independent exhibition in 1874. Impression, Sunrise (1873; Musée Marmottan Monet,
+                    Paris), one of Monet&apos;s contributions to this exhibition, drew particular scorn for the
+                    unfinished appearance of its loose handling and indistinct forms. Yet the artists saw the
+                    criticism as a badge of honor, and subsequently called themselves “Impressionists” after
+                    the painting&apos;s title, even though the name was first used derisively.
+                    Monet found subjects in his immediate surroundings, as he painted the people and
+                    places he knew best, families and friends. His homes and gardens became gathering
+                    places for friends, including Manet and Renoir, who often painted alongside their host.
+                    Yet Monet&apos;s paintings cast a surprisingly objective eye on these scenes, which include
+                    few signs of domestic relations.
+                    Shortly after Monet died (a wealthy and well-respected man at the age of eighty-six), the
+                    French government installed his last water-lily series in specially constructed galleries at
+                    the Orangerie in Paris, where they remain today.
+                </p>
+            </article>
+
+            <article>
+                <aside>
+                    <p>: Impressionism involves short strokes of brushes and the prominent light working.
+                    </p>
+                </aside>
+        
+                <table>
+                    <tr>
+                    <th>Year </th>
+                    <th> Techniques </th>
+                    </tr>
+                    <tr>
+                    <td>1865 </td>
+                    <td> En plein air + asymmetrical arrangements of forms + unmediated
+                        colors </td>
+                    </tr>
+                    <tr>
+                    <td>1890s </td>
+                    <td> recording perceptual processes </td>
+                    </tr>
+                    <tr>
+                        <td>1910s</td>
+                        <td> abstract renderings from broad strokes of color and intricately built-up
+                            textures </td>
+                    </tr>
+                </table>
+                <br>
+                <br>
+                <p>Fore more in formation : <a href="https://www.metmuseum.org/toah/hd/cmon/hd_cmon.htm" target="_blank">Claude Monet</a></p>
+            </article>
+              <br>
+              <br>
+            <div>
+                <figure>
+                    <a href="https://melbourneartclass.com/monets-water-lilies-at-lorangerie-paris/" target="_blank">
+                        <img src="images/lorainger.jpg" alt="Monet's water lillies at l'Orangerie gallery, Paris" width="400">
+                    </a>
+                    <figcaption>Monet&apos;s water lilies at l&apos;Orangerie, Paris</figcaption>
+                </figure>
+            </div>
+           
+        </section>
+        <br>
+            <br>
+            <br>
+            <div class="foot">
+            <p>
+                Copyright &copy; 2022 <br>
+                Designed by T.W.</p>
+            </div>
+        <!--JavaScript for Toggle Menu-->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name ="viewport" content ="width=device-width, 
+        initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Impressionism of Claude Monet - Main Page</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" media="print" href="print.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5206cfd46e.js" crossorigin="anonymous"></script>    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href=""><strong><u>MAIN PAGE</u></strong></a></li>
+                        <li><a href="claude.html">CLAUDE MONET</a></li>
+                        <li><a href="pieces.html">FAMOUS PIECES</a></li>
+                        <li><a href="about.html">ABOUT ME</a></li>
+                        <li><a href="feedback.html">FEED BACK</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>What is impressionism?</h1>
+                <p>
+                    Impressionism is an artistic movement first established in the late 19th which was not in
+                    any other country more sensational than France. Being called impressionism was that
+                    the artists were not trying to make the paintings realistic, but they tried to capture the
+                    &apos;impression&apos; of the scenario they see &apos;on the spot&apos;. Unlike the academic rules that the
+                    artists would sketch roughly from what they saw then finished works in the studios. This
+                    art style was invented by Parisian artists, and one of them was Claude Monet.
+                    
+                </p>
+
+            </div>
+        </section>
+
+          
+                <br>
+            <br>
+            <div class="center">
+            <video controls="controls"  poster="images/thumbim.jpg" src="videos/imimim.mp4" width="400">
+                Your browser does not support the HTML5 Video element.
+            </video> 
+            <br>
+            <p><a href="https://www.metmuseum.org/toah/hd/cmon/hd_cmon.htm" target="_blank">What's impressionsm | Tate kids</a></p>
+        </div>
+        <br>
+            <br>
+            <br>
+            <div class="foot">
+            <p>
+                Copyright &copy; 2022 <br>
+                Designed by T.W.</p>
+            </div>
+        
+    
+        
+
+        <!--JavaScript for Toggle Menu-->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+
+    </body>
+</html>
